@@ -92,7 +92,7 @@ Closes the connection between the connected sockets.
 
 
 ### Chat Application Example
-Now it's time for a little example. In this example, we're going to create a console-based application that allows two people to chat on network. For simplicity's sake, one application will be the server and the other one will be the client.
+Now it's time for a little example. In this example, we're going to create a console-based application that allows two people to chat on a network. For simplicity's sake, one application will be the server and the other one will be the client.
 
 Let's dive right into the code. Firstly, let's explain how our code will work. In a chat application, incoming messages are not predictable, and we need to print them as they come. We also need to be always prompting the user to type a message, but we know that when an application is waiting for the user to input something on a console, no code will be executed. What does this mean? This means we can't print incoming messages while we're waiting for the user to type messages. We can wait until the user inputs a message, then print the incoming message, but that makes a very horrible experience for our users. So what can we do? The answer is _multithreading_. We will create two threads on each of the applications, one to print incoming messages, and the other to wait for the user to enter a message. _Problem solved_. 
 
