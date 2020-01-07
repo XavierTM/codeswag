@@ -272,7 +272,7 @@ All you have to know is the hostname of the computer running the server applicat
 *Figure 1: Server output sample*
 
 ![Client sample output](https://github.com/XavierTM/codeswag/blob/master/networking-with-java/console-chat-app-example/Client-sample-screenshot.png)  
-*Figure 2: Client outtput sample*
+*Figure 2: Client output sample*
 
 The link below is to the full documentation of the *java.net package*.  
 [Read more](https://docs.oracle.com/javase/8/docs/api/java/net/package-frame.html)
