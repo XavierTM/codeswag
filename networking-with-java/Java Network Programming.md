@@ -268,10 +268,10 @@ The client code will prompt the user to enter the hostname and the port number f
 
 All you have to know is the hostname of the computer running the server application and the port chosen to be listened to. Below are the samples that were done on the same computer(hence the hostname *localhost*). Port 81 was chosen.
 
-![Serversample output](https://github.com/XavierTM/codeswag/blob/master/networking-with-java/console-chat-app-example/Server-sample-screenshot.png)  
+![Serversample output](https://codeswag.co.uk/wp-content/uploads/2020/01/Server-sample-screenshot.png)  
 *Figure 1: Server output sample*
 
-![Client sample output](https://github.com/XavierTM/codeswag/blob/master/networking-with-java/console-chat-app-example/Client-sample-screenshot.png)  
+![Client sample output](https://codeswag.co.uk/wp-content/uploads/2020/01/Client-sample-screenshot-150x150.png)  
 *Figure 2: Client output sample*
 
 The link below is to the full documentation of the *java.net package*.  
