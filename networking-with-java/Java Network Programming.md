@@ -2,9 +2,9 @@
 _Network programming_ refers to the writing of programs that runs across different devices. The devices need to be connected via a certain _network_.
 A _network_ is just an interconnection of two or more devices.  
 Networking has many advantages:  
- * It allows communication between users and sharing of information without the need to be physically together.  
- * It allows sharing of resources hence saving costs. For example, in a company, all computers can be connrcted to a printer via a network so that the company doesn't have to buy a printer for each office.  
- * It allows the operation of machines remotely. This can be very useful especially when you can't physically be where the machine is, like in a hazardous environmment. Or just for convenience like the [Internet of Things](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=28&cad=rja&uact=8&ved=2ahUKEwjhjrbPm-rmAhUSUxUIHUdbCB0QmhMwG3oECA0QAg&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FInternet_of_things&usg=AOvVaw25VoDIzJabaX0WmCLYIOtX) in homes, which allows you to control home appliances from wherever you are.
+ * It allows communication between users and the sharing of information without the need to be physically together.  
+ * It allows the sharing of resources hence saving costs. For example, in a company, all computers can be connected to a printer via a network so that the company doesn't have to buy a printer for each office.  
+ * It allows the operation of machines remotely. This can be very useful especially when you can't physically be where the machine is, like in a hazardous environment. Or just for convenience like the [Internet of Things](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=28&cad=rja&uact=8&ved=2ahUKEwjhjrbPm-rmAhUSUxUIHUdbCB0QmhMwG3oECA0QAg&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FInternet_of_things&usg=AOvVaw25VoDIzJabaX0WmCLYIOtX) in homes, which allows you to control home appliances from wherever you are.
 
 Let us define some networking terminology:  
   * **Protocol**: a set of conventional rules or procedures followed when two devices are communicating. Protocols are there to make sure that devices interpret the information the same way.  
