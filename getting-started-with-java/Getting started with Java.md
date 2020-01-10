@@ -1,8 +1,8 @@
 ## Getting Started with Java
-###What is Java?
+### What is Java?
 Java is high level programming language, owned by Oracle. It is one of the most popular programming languages in the world, and it has been on the #1 most used programming language for some years. As of 2019, it was rated the third most used  programming language ([GitHub Octoverse](https://octoverse.github.com)).
 
-####So why is Java so popular?:  
+#### So why is Java so popular?:  
  * **Platform-independence**: Java code written for Windows can be run on Linux and vice versa(or any other popular platform). In fact you don't write Java code for Windows or for Linux, you just write Java code. And it will run on any popular platform. Windows, Linux, Unix, MacOS etc. You don't need to recompile it, you just need to run it. This portability is made possible by what is called the *Java Virtual Machine(JVM)*.  
  * **Object-oriented**: Java is an Object Oriented Programming(OOP) language,  and that provides a lot of advantages, including abstraction, code reuse, modularity, maintainability etc. OOP is a programming paradigm which organizes programs as objects with properties(data) and behaviours(subroutines). This is a natural approach to problem solving since the real-world is full of objects. More on OOP later.  
  * **Supports multi-threading**: multi-threading allows concurrent execution of parts of a program, called threads, with so much ease. This is the reason why Java is popular in writing website backends, since most web applications need to serve a lot of clients simultaneously.
@@ -29,7 +29,7 @@ The JDK is found on this [link](http://www.oracle.com/technetwork/java/javase/do
 
 Now to install NetBeans, follow this [link](http://www.netbeans.org/index.html) to download and install it on your machine.
 
-###Object Oriented Programming(OOP)
+### Object Oriented Programming(OOP)
 Before we write our first Java program, let's first introduce OOP. As stated earlier, OOP is a programming paradigm in which data and the code that operates on the data are grouped together into objects.
   
 * **Object**: an instance of a class. It is a collection properties  related behaviours behaviours.  
@@ -43,7 +43,7 @@ OOP has 4 pillars:
 * **Inheritance**: This is when objects of one class obtain characteristics of another class. This allows for code reuse, therefore simplifying software development.  
 * **Polymorphism**: This the ability of the same subroutine to exhibit a different behavior in different objects(of different classes). This comes handy, for example, when we have a list of objects and we want to traverse the list, doing a different operation, depending on the type of code. Instead of using an if statement or switch case staement, we can create a method with the same name in all of the classes, but internally doing different things. So if we invoke a method on any object in the least, the required operation will be done. [This youtube video](https://youtu.be/pTB0EiLXUC8) explains these pillars in more detail.
 
-###Hello world
+### Hello world
 ``` java
 
 	package example;
@@ -55,6 +55,8 @@ OOP has 4 pillars:
 	}
 ```
 
+![Hello world output](https://codeswag.co.uk/wp-content/uploads/2020/01/Hello-world-300x66.png)
+
 One thing to note is that Java tries to make sure that we don't dare to do anything without creating class. It was designed to make sure that it is simply a difficult task to avoid all the benefits we have been talking about above, even if we're okay with *not benefitting*. This is why(most probably) we have to create a class in the above code example, even though we are not going to create an object instance of it.
   
 * The first line tells the compiler which *package* the class we're creating belongs to. A *package* is just a collection of related classes and interfaces. In this case, our package is named example.  
@@ -65,7 +67,7 @@ The array args is a location that will contain arguments passed to our program i
   Every statement in Java should end with a ";". Line 5 is an example of a statement.
 
 
-####Few points to note
+#### Few points to note
 * Java is a case-sensitive language, x is not the same X.
 * A java class name should be the same(with case sensitivity in mind) as the name of the file it resides, otherwise our code will refuse to compile. While still on this, it is not advisable to define two classes in one file. And if we do(for whatever reasons we be doing that), only one class in the file should be public. This class name will be the name of the file. Java files containing class code must be saved with a ".java" file extension.
 *  Every class that we intent to run must have a *main()* method in it. Otherwise it won't run.
@@ -246,6 +248,8 @@ For example:
 	}
 ```
 
+![sequential-construct-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Sequential-construct-300x107.png)
+
 * **conditional**: This construct shows that a statement, or a group of statements, called a block, will be executed only if a certain condition is met. There are two types of conditional constructs in Java, the **if** construct and the **switch** construct.
 
 ```
@@ -327,6 +331,9 @@ Below is the program example with its corresponding output
 	}
 
 ```
+
+![Conditional-construct-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Conditional-constructs.png)
+
 * **iterative**: this construct shows that a statement or a group of statements will be executed until a certain condition is true, or while a certain condition is true. In Java, iterative constructs are called loops, and there are three types of loops.
 
 The while loop will execute the statements over and over again until the condition become false.  
@@ -390,6 +397,8 @@ Below is an example
 	
 ```
 
+![Iterative-construct-demo-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Iterative-constructs-300x216.png)
+
 All the construct can be used together, and it should be noted that the general flow of a program is sequential. That means for example, if we write a conditional construct, then an iterative construct below, then the conditional construct is executed first, then the iterative construct later. And also, we can use another construct in another construct.
 
 ### Java methods
@@ -446,6 +455,8 @@ Every method must have a return statement. When the return statement is encounte
 
 
 ```
+
+![Methods-demo](https://codeswag.co.uk/wp-content/uploads/2020/01/Methods-300x63.png)
 
 ### Arrays
 Arrays allows us to store two or more values of one data type under one identifier. Each element will then be distiquished by specifying its position(a number), also called an index. Below is the format for declaring and initializing an array:  
@@ -779,6 +790,8 @@ Now let's create a class to implement the Wine and Drink classes:
 
 ```
 
+![Beverages-example-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Beverages-example-266x300.png)
+
 In our example we have demonstrated all the benefits of OOP:
 
 * **Inheritance**: We have made the Wine class to inherit the Drink class, demonstrating code reuse, avoiding doing the work twice.
@@ -846,3 +859,5 @@ The following is the implementng class:
 	}
 
 ```
+
+!![Multithreading-demo-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Multithreading-example-271x300.png)
