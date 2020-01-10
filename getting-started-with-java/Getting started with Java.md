@@ -19,7 +19,8 @@ A compiler for Java is included in what is called a *Java Development Kit(JDK)*.
 For the editor, we can choose from a variety of popular editors, but in this tutorial we will use NetBeans.
 
 The JDK is found on this [link](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Follow the instructions to download and install. Now we need to setup the path. This allows you to run Java using the commandline.
-####For Windows :
+
+#### For Windows :
 * Open Control Panel
 * Open "System and Security" section
 * Under System and Security, open "System" section
@@ -38,10 +39,10 @@ Before we write our first Java program, let's first introduce OOP. As stated ear
 Let's take a look at a car. Any car(let's say yours) is an object of a class called *Car*. Your car has some properties. Mileage, battery level(I'm assuming you have an [electric vehicle](www.tesla.com)), age ,etc. It has behaviours also. It can drive, turn, indicate, etc. Note that when you drive your car, you're decreasing its battery level and increasing mileage. If I drive my car, I cannot affect your car's battery level and mileage. That's the whole idea of OOP. We group related data and behaviors together so that we don't mistakenly modify the wrong data.
 
 OOP has 4 pillars:  
-* **Encapsulation**: it is the grouping of data and subroutines working on them into one unit. Encapsulation reduces the complexity of the programs by eliminating the need of passing many parameters to procedures.  
-* **Abstraction**: Abstraction is the hiding of implementation details of the object, only exposing interfaces through public subroutines. This makes the changing of code a lot easier, as long as we leave the interface the class as it is, we can change how the class work without affecting the code that depends on it.  
+* **Encapsulation**: it is the grouping of data and subroutines working on them into one unit. Encapsulation reduces the complexity of the programs by eliminating the need for passing many parameters to subroutines.  
+* **Abstraction**: Abstraction is the hiding of implementation details of the object, only exposing interfaces through public subroutines. This makes the changing of code a lot easier, as long as we leave the interface the class as it is, we can change how the class works without affecting the code that depends on it.  
 * **Inheritance**: This is when objects of one class obtain characteristics of another class. This allows for code reuse, therefore simplifying software development.  
-* **Polymorphism**: This the ability of the same subroutine to exhibit a different behavior in different objects(of different classes). This comes handy, for example, when we have a list of objects and we want to traverse the list, doing a different operation, depending on the type of code. Instead of using an if statement or switch case staement, we can create a method with the same name in all of the classes, but internally doing different things. So if we invoke a method on any object in the least, the required operation will be done. [This youtube video](https://youtu.be/pTB0EiLXUC8) explains these pillars in more detail.
+* **Polymorphism**: This the ability of the same subroutine to exhibit different behavior in different objects(of different classes). This comes handy, for example, when we have a list of objects and we want to traverse the list, doing a different operation, depending on the type of code. Instead of using an if statement or switch case statement, we can create a method with the same name in all of the classes, but internally doing different things. So if we invoke a method on any object in the least, the required operation will be done. [This youtube video](https://youtu.be/pTB0EiLXUC8) explains these pillars in more detail.
 
 ### Hello world
 ``` java
@@ -57,11 +58,11 @@ OOP has 4 pillars:
 
 ![Hello world output](https://codeswag.co.uk/wp-content/uploads/2020/01/Hello-world-300x66.png)
 
-One thing to note is that Java tries to make sure that we don't dare to do anything without creating class. It was designed to make sure that it is simply a difficult task to avoid all the benefits we have been talking about above, even if we're okay with *not benefitting*. This is why(most probably) we have to create a class in the above code example, even though we are not going to create an object instance of it.
+One thing to note is that Java tries to make sure that we don't dare to do anything without creating a class. It was designed to make sure that it is simply a difficult task to avoid all the benefits we have been talking about above, even if we're okay with *not benefitting*. This is why(most probably) we have to create a class in the above code example, even though we are not going to create an object instance of it.
   
 * The first line tells the compiler which *package* the class we're creating belongs to. A *package* is just a collection of related classes and interfaces. In this case, our package is named example.  
 * On line 3, we declared the class and named it HelloWorld.Everything that is part of a class body in Java has to be surrounded by squiggly-braces.  
-* On line 4 is a method header called main with an argument of an array of objects of class String. Everything that is to be executed in a Java program has to be in the main function. When you run a Java program, the JVM looks for the main function, executes it until its end, then exit. Everything that is part of a method in Java body has to be surrounded by squiggly-braces.
+* Line 4 is a header of a method called main with an argument of an array of objects of class String. Everything that is to be executed in a Java program has to be in the main method. When you run a Java program, the JVM looks for the main method, executes it until its end, then exit. Everything that is part of a method in Java body has to be surrounded by squiggly-braces.
 The array args is a location that will contain arguments passed to our program in a commandline. More on this later. 
 * On line 5, we're printing the words "Hello world" to the screen. To print anything else we can replace the "Hello world" statement with whatever we want to print. We say we're passing a value to a subroutine(called methods in Java) to act on. More on methods later. The method System.out.println() prints out the passed value, then print a new line character. There is also a method called System.out.print() which just prints out the passed value.  
   Every statement in Java should end with a ";". Line 5 is an example of a statement.
@@ -71,7 +72,7 @@ The array args is a location that will contain arguments passed to our program i
 * Java is a case-sensitive language, x is not the same X.
 * A java class name should be the same(with case sensitivity in mind) as the name of the file it resides, otherwise our code will refuse to compile. While still on this, it is not advisable to define two classes in one file. And if we do(for whatever reasons we be doing that), only one class in the file should be public. This class name will be the name of the file. Java files containing class code must be saved with a ".java" file extension.
 *  Every class that we intent to run must have a *main()* method in it. Otherwise it won't run.
-*  Only the code in the main function is called. We can place code anywhere, but for it to run, it has to be either called by the code in the main function, or be called by the code that is being called by the code in the main fucntion, or be called by...
+*  Only the code in the main method is called. We can place code anywhere, but for it to run, it has to be either called by the code in the main method, or be called by the code that is being called by the code in the main method, or be called by...
 
 ### Comments in Java
 A comment is an explanatory statement used inside the code. It is used to improve code readability. It is for the people and not the computer.
