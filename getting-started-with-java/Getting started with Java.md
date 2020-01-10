@@ -1,15 +1,15 @@
 ## Getting Started with Java
 ### What is Java?
-Java is high level programming language, owned by Oracle. It is one of the most popular programming languages in the world, and it has been on the #1 most used programming language for some years. As of 2019, it was rated the third most used  programming language ([GitHub Octoverse](https://octoverse.github.com)).
+Java is a high level programming language, owned by Oracle. It is one of the most popular programming languages in the world, and it has been on the #1 most used programming language for some years. As of 2019, it was rated the third most used  programming language ([GitHub Octoverse](https://octoverse.github.com)).
 
 #### So why is Java so popular?:  
- * **Platform-independence**: Java code written for Windows can be run on Linux and vice versa(or any other popular platform). In fact you don't write Java code for Windows or for Linux, you just write Java code. And it will run on any popular platform. Windows, Linux, Unix, MacOS etc. You don't need to recompile it, you just need to run it. This portability is made possible by what is called the *Java Virtual Machine(JVM)*.  
- * **Object-oriented**: Java is an Object Oriented Programming(OOP) language,  and that provides a lot of advantages, including abstraction, code reuse, modularity, maintainability etc. OOP is a programming paradigm which organizes programs as objects with properties(data) and behaviours(subroutines). This is a natural approach to problem solving since the real-world is full of objects. More on OOP later.  
- * **Supports multi-threading**: multi-threading allows concurrent execution of parts of a program, called threads, with so much ease. This is the reason why Java is popular in writing website backends, since most web applications need to serve a lot of clients simultaneously.
+ * **Platform-independence**: Java code written for Windows can be run on Linux and vice versa(or any other popular platform). In fact you don't write Java code for Windows or for Linux, you just write Java code. And it will run on any popular platform. Windows, Linux, Unix, MacOS ,etc. You don't need to recompile it, you just need to run it. This portability is made possible by what is called the *Java Virtual Machine(JVM)*.  
+ * **Object-oriented**: Java is an Object Oriented Programming(OOP) language,  and that provides a lot of advantages, including abstraction, code reuse, modularity, maintainability ,etc. OOP is a programming paradigm which organizes programs as objects with properties(data) and behaviors(subroutines). This is a natural approach to problem-solving since the real world is full of objects. More on OOP later.  
+ * **Supports multi-threading**: multi-threading allows concurrent execution of parts of a program, called threads, with so much ease. This is the reason why Java is popular in writing website backends since most web applications need to serve a lot of clients simultaneously.
 
 ### Installing the Tools
-Now let's see what tools do we need to develop Java code and how to install them. First let us introduce few items. When we were discussing about Java's platform independence, we mentioned something called a JVM. But what is it? You probably already know that many softwares written, say for Linux, cannot run on Windows and vice versa. So the JVM is an interpreter that converts Java compiled code(called *bytecode*) into a form compatible with the platform.  
-**N.B**: The JVM itself is not portable, it is written specifically for each and every platform.  
+Now let's see what tools do we need to develop Java code and how to install them. First, let us introduce a few items. When we were discussing Java's platform independence, we mentioned something called a JVM. But what is it? You probably already know that many softwares written, say for Linux, cannot run on Windows and vice versa. So the JVM is an interpreter that converts Java compiled code(called *bytecode*) into a form compatible with the platform.  
+**N.B**: The JVM itself is not portable, it is written specifically for each platform.  
  
 What we will need:  
 * a compiler  
@@ -30,12 +30,12 @@ The JDK is found on this [link](http://www.oracle.com/technetwork/java/javase/do
 Now to install NetBeans, follow this [link](http://www.netbeans.org/index.html) to download and install it on your machine.
 
 ### Object Oriented Programming(OOP)
-Before we write our first Java program, let's first introduce OOP. As stated earlier, OOP is a programming paradigm in which data and the code that operates on the data are grouped together into objects.
+Before we write our first Java program, let's first introduce OOP. As stated earlier, OOP is a programming paradigm in which data and the code that operates on the data are grouped into objects.
   
-* **Object**: an instance of a class. It is a collection properties  related behaviours behaviours.  
-* **Class**: a blueprint/template for creating an object. It shows what properties(data) and behaviours(subroutines) an object created from it will have.
+* **Object**: an instance of a class. It is a collection of properties and related behaviors.  
+* **Class**: a blueprint/template for creating an object. It shows what properties(data) and behaviors(subroutines) an object created from it will have.
 
-Let's take a look at a car. Any car(let's say yours) is an object of a class called *Car*. Your car has some properties. Mileage, battery level(I'm assuming you have an [electric vehicle](www.tesla.com)), age etc. It has behaviours also. It can drive, turn, indicate etc. Note that when you drive your car, you're decreasing its battery level and increasing mileage. If I drive my car, I cannot affect your car's battery level and mileage. That's the whole idea of OOP. We group related data and behaviours together so that we don't mistakenly modify the wrong data.
+Let's take a look at a car. Any car(let's say yours) is an object of a class called *Car*. Your car has some properties. Mileage, battery level(I'm assuming you have an [electric vehicle](www.tesla.com)), age ,etc. It has behaviours also. It can drive, turn, indicate, etc. Note that when you drive your car, you're decreasing its battery level and increasing mileage. If I drive my car, I cannot affect your car's battery level and mileage. That's the whole idea of OOP. We group related data and behaviors together so that we don't mistakenly modify the wrong data.
 
 OOP has 4 pillars:  
 * **Encapsulation**: it is the grouping of data and subroutines working on them into one unit. Encapsulation reduces the complexity of the programs by eliminating the need of passing many parameters to procedures.  
