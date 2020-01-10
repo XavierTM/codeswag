@@ -3,8 +3,8 @@
 Java is a high level programming language, owned by Oracle. It is one of the most popular programming languages in the world, and it has been on the #1 most used programming language for some years. As of 2019, it was rated the third most used  programming language ([GitHub Octoverse](https://octoverse.github.com)).
 
 #### So why is Java so popular?:  
- * **Platform-independence**: Java code written for Windows can be run on Linux and vice versa(or any other popular platform). In fact you don't write Java code for Windows or for Linux, you just write Java code. And it will run on any popular platform. Windows, Linux, Unix, MacOS ,etc. You don't need to recompile it, you just need to run it. This portability is made possible by what is called the *Java Virtual Machine(JVM)*.  
- * **Object-oriented**: Java is an Object Oriented Programming(OOP) language,  and that provides a lot of advantages, including abstraction, code reuse, modularity, maintainability ,etc. OOP is a programming paradigm which organizes programs as objects with properties(data) and behaviors(subroutines). This is a natural approach to problem-solving since the real world is full of objects. More on OOP later.  
+ * **Platform-independence**: Java code written for Windows can be run on Linux and vice versa(or any other popular platform). In fact, you don't write Java code for Windows or Linux, you just write Java code. And it will run on any popular platform. Windows, Linux, Unix, MacOS, etc. You don't need to recompile it, you just need to run it. This portability is made possible by what is called the *Java Virtual Machine(JVM)*.  
+ * **Object-oriented**: Java is an Object-Oriented Programming(OOP) language,  and that provides a lot of advantages, including abstraction, code reuse, modularity, maintainability, etc. OOP is a programming paradigm which organizes programs as objects with properties(data) and behaviors(subroutines). This is a natural approach to problem-solving since the real world is full of objects. More on OOP later.  
  * **Supports multi-threading**: multi-threading allows concurrent execution of parts of a program, called threads, with so much ease. This is the reason why Java is popular in writing website backends since most web applications need to serve a lot of clients simultaneously.
 
 ### Installing the Tools
@@ -18,7 +18,7 @@ What we will need:
 A compiler for Java is included in what is called a *Java Development Kit(JDK)*. The JDK consists of the Java compiler, the JVM as well as the Java core classes. 
 For the editor, we can choose from a variety of popular editors, but in this tutorial we will use NetBeans.
 
-The JDK is found on this [link](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Follow the instructions to download and install. Now we need to setup the path. This allows you to run Java using the commandline.
+The JDK is found on this [link](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Follow the instructions to download and install. Now we need to set up the path. This allows you to run Java using the command-line.
 
 #### For Windows :
 * Open Control Panel
@@ -30,13 +30,13 @@ The JDK is found on this [link](http://www.oracle.com/technetwork/java/javase/do
 
 Now to install NetBeans, follow this [link](http://www.netbeans.org/index.html) to download and install it on your machine.
 
-### Object Oriented Programming(OOP)
+### Object-Oriented Programming(OOP)
 Before we write our first Java program, let's first introduce OOP. As stated earlier, OOP is a programming paradigm in which data and the code that operates on the data are grouped into objects.
   
 * **Object**: an instance of a class. It is a collection of properties and related behaviors.  
 * **Class**: a blueprint/template for creating an object. It shows what properties(data) and behaviors(subroutines) an object created from it will have.
 
-Let's take a look at a car. Any car(let's say yours) is an object of a class called *Car*. Your car has some properties. Mileage, battery level(I'm assuming you have an [electric vehicle](www.tesla.com)), age ,etc. It has behaviours also. It can drive, turn, indicate, etc. Note that when you drive your car, you're decreasing its battery level and increasing mileage. If I drive my car, I cannot affect your car's battery level and mileage. That's the whole idea of OOP. We group related data and behaviors together so that we don't mistakenly modify the wrong data.
+Let's take a look at a car. Any car(let's say yours) is an object of a class called *Car*. Your car has some properties. Mileage, battery level(I'm assuming you have an [electric vehicle](www.tesla.com)), age, etc. It has behaviors also. It can drive, turn, indicate, etc. Note that when you drive your car, you're decreasing its battery level and increasing mileage. If I drive my car, I cannot affect your car's battery level and mileage. That's the whole idea of OOP. We group related data and behaviors together so that we don't mistakenly modify the wrong data.
 
 OOP has 4 pillars:  
 * **Encapsulation**: it is the grouping of data and subroutines working on them into one unit. Encapsulation reduces the complexity of the programs by eliminating the need for passing many parameters to subroutines.  
@@ -63,20 +63,20 @@ One thing to note is that Java tries to make sure that we don't dare to do anyth
 * The first line tells the compiler which *package* the class we're creating belongs to. A *package* is just a collection of related classes and interfaces. In this case, our package is named example.  
 * On line 3, we declared the class and named it HelloWorld.Everything that is part of a class body in Java has to be surrounded by squiggly-braces.  
 * Line 4 is a header of a method called main with an argument of an array of objects of class String. Everything that is to be executed in a Java program has to be in the main method. When you run a Java program, the JVM looks for the main method, executes it until its end, then exit. Everything that is part of a method in Java body has to be surrounded by squiggly-braces.
-The array args is a location that will contain arguments passed to our program in a commandline. More on this later. 
-* On line 5, we're printing the words "Hello world" to the screen. To print anything else we can replace the "Hello world" statement with whatever we want to print. We say we're passing a value to a subroutine(called methods in Java) to act on. More on methods later. The method System.out.println() prints out the passed value, then print a new line character. There is also a method called System.out.print() which just prints out the passed value.  
+The array args is a location that will contain arguments passed to our program in a command-line. More on this later. 
+* In line 5, we're printing the words "Hello world" to the screen. To print anything else we can replace the "Hello world" statement with whatever we want to print. We say we're passing a value to a subroutine(called methods in Java) to act on. More on methods later. The method System.out.println() prints out the passed value, then print a new line character. There is also a method called System.out.print() which just prints out the passed value.  
   Every statement in Java should end with a ";". Line 5 is an example of a statement.
 
 
 #### Few points to note
 * Java is a case-sensitive language, x is not the same X.
-* A java class name should be the same(with case sensitivity in mind) as the name of the file it resides, otherwise our code will refuse to compile. While still on this, it is not advisable to define two classes in one file. And if we do(for whatever reasons we be doing that), only one class in the file should be public. This class name will be the name of the file. Java files containing class code must be saved with a ".java" file extension.
-*  Every class that we intent to run must have a *main()* method in it. Otherwise it won't run.
-*  Only the code in the main method is called. We can place code anywhere, but for it to run, it has to be either called by the code in the main method, or be called by the code that is being called by the code in the main method, or be called by...
+* A java class name should be the same(with case sensitivity in mind) as the name of the file it resides, otherwise our code will refuse to compile. While still on this, it is not advisable to define two classes in one file. And if we do(for whatever reasons we will be doing that), only one class in the file should be public. This class name will be the name of the file. Java files containing class code must be saved with a ".java" file extension.
+*  Every class that we intend to run must have a *main()* method in it. Otherwise it won't run.
+*  Only the code in the main method is called. We can place code anywhere, but for it to run, it has to be either called by the code in the main method, or be called by the code that is being called by the code in the main method, or be called by the...
 
 ### Comments in Java
 A comment is an explanatory statement used inside the code. It is used to improve code readability. It is for the people and not the computer.
-In java we use // to tell the compiler to ignore the text that follows. If we want the comments to span more than one line we use /**/ syntax
+In Java, we use // to tell the compiler to ignore the text that follows. If we want the comments to span more than one line we use /**/ syntax
 
 ```
 
@@ -105,7 +105,7 @@ In java we use // to tell the compiler to ignore the text that follows. If we wa
      * **byte**: it is an eight-bit data type used to store an integer in the range of -128 to 127. The number is represented in two's complement.
      *  **short**: it is a 16-bit data type storing a two's complement integer in the range of -32,768 to 32,767.
      *  **int**: it is a 32-bit data type used to store a two's complement integer in the range of -2,147,483,648 to 2,147,483,647. 
-     *  **long**: this 64-bit data type stores a two's compliment integer in the range of -9,223,372,036,854,775,808 to -9,223,372,036,854,775,807.
+     *  **long**: this 64-bit data type stores a two's complement integer in the range of -9,223,372,036,854,775,808 to -9,223,372,036,854,775,807.
      *  **float**: this 32-bit data type stores a floating number(a number with a decimal point) in the range of +/- 3.40282347E+38.
      *  **double**: this 64-bit data type stores a floating number(a number with a decimal point) in the range of +/- 1.7976931570E+308.
      *  **boolean**: this data type stores one bit, representing either a TRUE or FALSE.
@@ -154,7 +154,7 @@ In java we use // to tell the compiler to ignore the text that follows. If we wa
 	```  
 
 After the execution of the above statement, the memory location assigned to variable x will hold a value of 78.  
-* **Data type**: the interpretation of the data held by  variable. Computer memory is all about 1's and 0's, so the data type gives meaning to those 1's and 0's. The data type gives information about the layout of the variable in memory, what operations can be done on that value, etc.
+* **Data type**: the interpretation of the data held by a variable. Computer memory is all about 1's and 0's, so the data type gives meaning to those 1's and 0's. The data type gives information about the layout of the variable in memory, what operations can be done on that value, etc.
 
 ### Operators
 An *operator* is a symbol that is used to perform an operation on a variable or variables.
@@ -194,12 +194,12 @@ Some points to note:
 
 ``` java
 
-	x = (z < y); // less than operator, x will be TRUE
-	x = (z > y); // greater than operator, x will be FALSE
+	x = (z < y); // less-than operator, x will be TRUE
+	x = (z > y); // greater-than operator, x will be FALSE
 	x = (z == y); // equality operator, x will be FALSE
 	x = (z != y); // non-equality operator, x will be TRUE
-	x = (z <= y); // less than or equal operator, x will be TRUE
-	x = (z >= y); // greater than or equal operator, x will be FALSE
+	x = (z <= y); // less-than-or-equal operator, x will be TRUE
+	x = (z >= y); // greater-than-or-equal operator, x will be FALSE
 
 ```
 
@@ -207,23 +207,23 @@ Here is the [link](https://www.javatpoint.com/operators-in-java) to read more on
 
 
 ### Modifiers
-**Modifiers**: these are Java keywords that modifies the scope or behaviour of a class, variable or method. Modifiers are not used in variables defined inside functions(local variables). There are two types of modifiers:
+**Modifiers**: these are Java keywords that modify the scope or behavior of a class, variable or method. Modifiers are not used in variables defined inside functions(local variables). There are two types of modifiers:
 
- * *Access modifiers* are used to modify the scope of class, member method or member variable. 
-     * *default* : the entity declared as default can be accessed by the code in the same package only. You declare something as default by just omitting the access modifier.
+ * *Access modifiers* are used to modify the scope of a class, member method or member variable. 
+     * *default*: the entity declared as default can be accessed by the code in the same package only. You declare something as default by just omitting the access modifier.
      * *public*: an entity declared public will be accessible from anywhere.
      * *private*: declaring an entity as private will make it accessible only from the class which it is declared.
      * *protected*: an entity declared protected will be accessible in the package or outside the package by classes who are subclasses of the class in which it is declared.  
     **NB**: a class, unless if it is an *inner class*(one that is declared inside a class) cannot be declared as *protected* or *private*. This is because if we look at the definitions of the two modifiers, it doesn't make any sense to declare it private or protected.
   * *Non-access modifiers* are modifiers:
-     * *static* the static modifier is used to declare enities that will exist independently of class instances. For example, if we declare a property variable of a class as static, there will exist only one copy of the variable, no matter how many instances of the class we create. We can access the variable by just specifying the class name and the variable name, without reference to any instance. If a method of a class is declared as static, it cannot use non-static variables inside it's body. This is because it is supposed to be called without reference to any instance of a class.
-     * *final*: if we declare a primitive variable as final, we can only set initialize it once. After that we can't change it's value. If we declare a reference variable as static, we can only instantiate it once. After that we can't instantiate it again, or reference it to another object, however, we can change the properties of the object.  If a class is declared final, we cannot inherit it.
-     * *abstract*: an abstract method is a method which has no implementation(body). The body is supposed to be provided by a class which inherits the class, unless that class is also abstract. A class declared abstract cannot be instantiated, it can only be inherited. A class with at least one abstract method should be declared abstract. If a class, unless also abstract, inherits an abstract class, must implements all of it's abstract methods.
-     * *syncronized*: a variable is declared as a syncronized if it is supposed to be accessed with only one thread at a given time.
+     * *static* the static modifier is used to declare entities that will exist independently of class instances. For example, if we declare a property variable of a class as static, there will exist only one copy of the variable, no matter how many instances of the class we create. We can access the variable by just specifying the class name and the variable name, without reference to any instance. If a method of a class is declared as static, it cannot use non-static variables inside its body. This is because it is supposed to be called without reference to any instance of a class.
+     * *final*: if we declare a primitive variable as final, we can only set initialize it once. After that, we can't change its value. If we declare a reference variable as static, we can only instantiate it once. After that we can't instantiate it again or reference it to another object, however, we can change the properties of the object.  If a class is declared final, we cannot inherit it.
+     * *abstract*: an abstract method is a method that has no implementation(body). The body is supposed to be provided by a class that inherits the class unless that class is also abstract. A class declared abstract cannot be instantiated, it can only be inherited. A class with at least one abstract method should be declared abstract. If a class, unless also abstract, inherits an abstract class, must implement all of its abstract methods.
+     * *synchronized*: a variable is declared as synchronized if it is supposed to be accessed with only one thread at a given time.
 
 
 ### Java constructs
-A *programming construct* is a defined structure that shows the order in which statement in a program are executed. There are three categories of programming constructs:  
+A *programming construct* is a defined structure that shows the order in which statements in a program are executed. There are three categories of programming constructs:  
 
 * **sequential**: this type of construct shows that the order of execution is one statement after the other, in the order they appear. The syntax is as shown below. Statement 1 will be executed first, then statement 2, then statement 3.
  
@@ -337,7 +337,7 @@ Below is the program example with its corresponding output
 
 * **iterative**: this construct shows that a statement or a group of statements will be executed until a certain condition is true, or while a certain condition is true. In Java, iterative constructs are called loops, and there are three types of loops.
 
-The while loop will execute the statements over and over again until the condition become false.  
+The while loop will execute the statements over and over again until the condition becomes false.  
 ```
 
 	while([condition]) {
@@ -345,7 +345,7 @@ The while loop will execute the statements over and over again until the conditi
 	}
 ```
 
-The do while loop will execute the statements at least once, then after that as long as the condition is true.  
+The do-while loop will execute the statements at least once, then after that as long as the condition is true.  
 ```
 
 	do {
@@ -353,7 +353,7 @@ The do while loop will execute the statements at least once, then after that as 
 	} while([condition])
 ```
 
-The for loop will execute the initalization statement once, repeats the cycle of testing the condition to see if its true, if true execute the statements, then execute the increment/decrement statement. The cycle will repeat until the condition become false. I marked the [increment/decrement] statement that way because usually an incremental/decremental statement is placed there. Otherwise any Java legal statement can be put there.  
+The for loop will execute the initialization statement once, repeats the cycle of testing the condition to see if it is true, if true execute the statements, then execute the increment/decrement statement. The cycle will repeat until the condition become false. I marked the increment/decrement statement that way because usually an incremental/decremental statement is placed there. Otherwise, any Java legal statement can be put there.  
 ```
 
 	for ([initialization]; [condition]; [increment/decrement]) {
@@ -400,10 +400,10 @@ Below is an example
 
 ![Iterative-construct-demo-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Iterative-constructs-300x216.png)
 
-All the construct can be used together, and it should be noted that the general flow of a program is sequential. That means for example, if we write a conditional construct, then an iterative construct below, then the conditional construct is executed first, then the iterative construct later. And also, we can use another construct in another construct.
+All the constructs can be used together, and it should be noted that the general flow of a program is sequential. That means, for example, if we write a conditional construct, then an iterative construct below, the conditional construct is executed first, then the iterative construct later. And also, we can use another construct in another construct.
 
 ### Java methods
-A *subroutine* is a collection of program statements that does a cetain task. A subroutine that returns a value to another variable is called a function(analogous to a math function). A procedure is the one that doesn't return a value after execution.
+A *subroutine* is a collection of program statements that does a certain task. A subroutine that returns a value to another variable is called a function(analogous to a math function). A procedure is the one that doesn't return a value after execution.
 In Java, subroutines are called methods. Here is the syntax for creating a method.  
 
 ```
@@ -418,10 +418,10 @@ In Java, subroutines are called methods. Here is the syntax for creating a metho
 *Parameters* are values given to a method to work on
 
 Two methods we've encountered so far:
-* System.out.println().The println is a method of a static property of the class System, out. It has statements that prints tha value we pass to it on the screen.
+* System.out.println().The *println()* is a method of a static property of the class System, out. It has statements that prints the value we pass to it on the screen.
 * The main() method. This one we actually defined it ourselves. Too bad we don't get to call it(it is called by the JVM when our program runs).
 
-Every method must have a return statement. When the return statement is encountered by the compiler, it exists the function. However, in Java the return statement is not compulsory for a method that doesn't return a value after execution. A return statement for a method that returns a value consists of the **return** keyword, followed by the value to be returned. For a method that doesn't return a value, its's just the return keyword. We use the **void** keyword on the return-type when declaring a method, to show that it does not return anything.
+Every method must have a return statement. When the return statement is encountered by the compiler, it exits the function. However, in Java, the return statement is not compulsory for a method that doesn't return a value after execution. A return statement for a method that returns a value consists of the **return** keyword, followed by the value to be returned. For a method that doesn't return a value, it is just the return keyword. We use the **void** keyword on the return-type when declaring a method, to show that it does not return anything.
 
 ``` java
 
@@ -480,7 +480,7 @@ For example:
 
 **NB.** The indexes are zero based, that's why the first element has an index 0 and the 10th element(last element) has an index of 9.
 
-In Java arrays are also treated as some kind of objects objects. An array has a property called length. If you execute the statements below, it will printout the value of 10;
+In Java, arrays are also treated as some kind of object. An array has a property called length. If you execute the statements below, it will printout the value of 10;
 
 ``` java  
 
@@ -491,7 +491,7 @@ In Java arrays are also treated as some kind of objects objects. An array has a 
 
 
 ### Classes and objects
-We have discussed what a classes and objects are in the Object Oriented Programming section. Now let's do some examples. Below is a syntax for 
+We have discussed what classes and objects are in the Object-Oriented Programming section. Now let's do some examples. Below is a syntax for 
 
 
 ``` 
@@ -510,7 +510,7 @@ We have discussed what a classes and objects are in the Object Oriented Programm
 
 ```
 
-Import statements are used when we want to use a class which is not part of the package. The **import** keyword is used to make the class available to our code.
+Import statements are used when we want to use a class that is not part of the package. The **import** keyword is used to make the class available to our code.
 
 ```
 
@@ -569,7 +569,7 @@ Lets create a class with a main() and play with the code above the code above.
 ```
 
 #### Constructors 
-A constructor is a method that is called everytime when an abject of a class is being constructed. In the above example, we didn't write a constructor, so Java will create a default constructor for our class.
+A constructor is a method that is called whenever an object of a class is being constructed. In the above example, we didn't write a constructor, so Java will create a default constructor for our class.
 To create a constructor, we create a method in a class body with the same name as the class but with no return type(not even *void*). The method can have arguments also.
 Let's rewrite the above code with a constructor:
 
@@ -620,10 +620,10 @@ And then we rewrite the implementing code to use the constructor.
 ```
 
 #### Another example
-*Inheritance* is when a class get the properties of another class. In Java, this achieved by the **extends** keyword.
+*Inheritance* is when a class gets the properties of another class. In Java, this achieved by the **extends** keyword.
 
 We are given a task by a beverage company. They pack two categories of beverages, normal drinks, then wines. They want to create a system that calculates the amount of money they are going to make for all the batches they pack.
-For a normal drink, the calculation of the total amount is pretty straight forward. It is proportional to the amount of beverage they put in that batch. However, for a wine, the amount of money they make is proportional to the maturity of the wine also.
+For a normal drink, the calculation of the total amount is pretty straight forward. It is proportional to the amount of beverage they put in that batch. However, for wine, the amount of money they make is proportional to the maturity of the wine also.
 
 We want to create a system that allows the user to enter the information of all batches and then our system will calculate the total. Here is the information the user will provide.
 
@@ -710,7 +710,7 @@ As we can see, the first four properties are already there in the Drink class. W
 
 ```
 
-What we did with *getTotalPrice()* is called *overriding*. Overriding refers to the re-implemetation of a super class method to suits the need of the subclass, keeping the interface. For example, here in the Wine class we still wanted price, but we wanted to calculate it differently. Overriding is the basis of polymorphism. We can override any memmber method as long as it is not declared final and we're willing to keep the interface.
+What we did with *getTotalPrice()* is called *overriding*. Overriding refers to the reimplementation of a superclass method to suits the need of the subclass, keeping the interface. For example, here in the Wine class we still wanted price, but we wanted to calculate it differently. Overriding is the basis of polymorphism. We can override any member method as long as it is not declared final and we're willing to keep the interface.
 
 Now let's create a class to implement the Wine and Drink classes:
 
@@ -806,9 +806,9 @@ In our example we have demonstrated all the benefits of OOP:
 
 
 ### Multithreading
-A multi-threaded program is a program that have two or more parts that can run simultaneously. The parts are called threads. All the programs we've been writing so far are single threaded. We can achieve that in Java by creating a class and inheriting the Thread  class, then override a method called *run()*. We can create as many different classes as we want that way. The parts of our code that we want to run in parallel are the ones that we place in the overridden *run()* methods. Then we create instances of those classes. Then we call a method called *start()*, inherited from the Thread class. 
+A multi-threaded program is a program that has two or more parts that can run simultaneously. The parts are called threads. All the programs we've been writing so far are single-threaded. We can achieve that in Java by creating a class and inheriting the Thread  class, then override a method called *run()*. We can create as many different classes as we want that way. The parts of our code that we want to run in parallel are the ones that we place in the overridden *run()* methods. Then we create instances of those classes. Then we call a method called *start()*, inherited from the Thread class. 
 
-Let's do an example. We want to create a simple class that printout a name we will give it and a number of times it had ran. We will create two instances of the class, give it two diferent names so that we can see which one is printing what lines.
+Let's do an example. We want to create a simple class that printout a name we will give it and the number of times it had run. We will create two instances of the class, give it two different names so that we can see which one is printing what lines.
 
 ``` java 
 
