@@ -120,37 +120,37 @@ In Java, we use // to tell the compiler to ignore the text that follows. If we w
 	The syntax  for declaring a property of a class(class or instance variable): 
  
 	```
-		[access-modifier] [non-access-modifier] [data-type] [identifier];
+	[access-modifier] [non-access-modifier] [data-type] [identifier];
 	```  
 
 	For example:  
 	``` java
 	
-		private final short count;
+	private final short count;
 	```
 	
 	The syntax for declaring a local variable:  
 
 	``` 
-		[data-type] [identifier];
+	[data-type] [identifier];
 	```   
 
 	For example:  
 
 	``` java
-		boolean isTrue;
+	boolean isTrue;
 	```
 
 * **Assignment**: an assignment statement is a line of code that gives(assigns) a variable a certain value. It has the following syntax:
    
 	```
-		[identifier] = [value];
+	[identifier] = [value];
 	```
 	
 	For example:  
 
 	``` java  
-		 x = 78;
+	x = 78;
 	```  
 
 After the execution of the above statement, the memory location assigned to variable x will hold a value of 78.  
@@ -163,7 +163,7 @@ An *operator* is a symbol that is used to perform an operation on a variable or 
    
 ```
 
- 	[identifier] [assignment-operator] [value]; // syntax
+ [identifier] [assignment-operator] [value]; // syntax
 
 ```  
 
@@ -171,19 +171,19 @@ The value on the right of the operator will be assigned to the variable on the l
 
 ``` java 
 
-	x = 67; // after execution of this statement, variable x will hold the value of 67
-	y = x // the value of y after this statement will be 67
+x = 67; // after execution of this statement, variable x will hold the value of 67
+y = x // the value of y after this statement will be 67
 ```  
 
  * **Arithmetic operators**: Arithmetic operators perform arithmetic on variables:
 ``` java
 
-	x = z * y; // x will be assigned the product of z and y
-	x = z / y; // x will be assigned the quotient of z and y
-	x = z + y; // x will be assigned the sum of z and y
-	x = z - y; // x will be assigned the difference between z and y
-	x++;       // the value of x(if it is an integer) will increase by 1
-	x--;       // the value of x(if it is an integer) will decrease by 1
+x = z * y; // x will be assigned the product of z and y
+x = z / y; // x will be assigned the quotient of z and y
+x = z + y; // x will be assigned the sum of z and y
+x = z - y; // x will be assigned the difference between z and y
+x++;       // the value of x(if it is an integer) will increase by 1
+x--;       // the value of x(if it is an integer) will decrease by 1
 
 ``` 
 Some points to note:
@@ -194,12 +194,12 @@ Some points to note:
 
 ``` java
 
-	x = (z < y); // less-than operator, x will be TRUE
-	x = (z > y); // greater-than operator, x will be FALSE
-	x = (z == y); // equality operator, x will be FALSE
-	x = (z != y); // non-equality operator, x will be TRUE
-	x = (z <= y); // less-than-or-equal operator, x will be TRUE
-	x = (z >= y); // greater-than-or-equal operator, x will be FALSE
+x = (z < y); // less-than operator, x will be TRUE
+x = (z > y); // greater-than operator, x will be FALSE
+x = (z == y); // equality operator, x will be FALSE
+x = (z != y); // non-equality operator, x will be TRUE
+x = (z <= y); // less-than-or-equal operator, x will be TRUE
+x = (z >= y); // greater-than-or-equal operator, x will be FALSE
 
 ```
 
@@ -238,15 +238,15 @@ For example:
 
 ``` java 
 
-	package example; 
-	
-	public class Example {
-	    public staic void main(String[] args) {
-			System.out.println("hello");
-			System.out.println("java");
-			System.out.println("programmer");
-		}
-	}
+package example; 
+
+public class Example {
+    public staic void main(String[] args) {
+	System.out.println("hello");
+	System.out.println("java");
+	System.out.println("programmer");
+    }
+}
 ```
 
 ![sequential-construct-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Sequential-construct-300x107.png)
@@ -255,39 +255,39 @@ For example:
 
 ```
 
-	/*
-	if construct
-	statement 1 will be executed if (condition 1) is true
-	*/
-	if (condition 1) {
-		statement 1;
-	}
-	
+/*
+if construct
+statement 1 will be executed if (condition 1) is true
+*/
+if (condition 1) {
+	statement 1;
+}
 
-	/* if else construct
-	statement 2 will be executed if (condition 2) is true
-	otherwise statement 3 is executed
-	*/
-	if (condition 2) {
-		statement 2;
-	} else {
-		statement 3;
-	}
-	
 
-	/*switch construct
-	statement 4 will be executed if the identifier equals value 1
-	statement 5 will be executed if the identifier equals value 2
-	the break keyword is there to avoid executioning of the uninteded case
-	as many cases as wanted can be placed
-	*/
-	switch([identifier]) {
-		case [value 1]:
-			statement 4;
-			break;
-		case [value 2]:
-			statement 5;
-	}
+/* if else construct
+statement 2 will be executed if (condition 2) is true
+otherwise statement 3 is executed
+*/
+if (condition 2) {
+	statement 2;
+} else {
+	statement 3;
+}
+
+
+/*switch construct
+statement 4 will be executed if the identifier equals value 1
+statement 5 will be executed if the identifier equals value 2
+the break keyword is there to avoid executioning of the uninteded case
+as many cases as wanted can be placed
+*/
+switch([identifier]) {
+	case [value 1]:
+		statement 4;
+		break;
+	case [value 2]:
+		statement 5;
+}
 
 ```
 
@@ -295,41 +295,41 @@ Below is the program example with its corresponding output
 
 ``` java
 
-	package example;
-	
-	public class Example {
-	    public static void main(String[] args) {
-	        
-	        int x = 4;
-	        
-	        if (x == 20) {
-	            System.out.println("x is equal to 20");
-	        }
-	        
-	        if (x == 4) {
-	            System.out.println("x is equal to 4");
-	        }
-	        
-	        if (x == 10) {
-	            System.out.println("x is equal to 10");
-	        } else {
-	            System.out.println("x is not equal to 10");
-	        }
-	        
-	        switch(x) {
-	            case 2:
-	                System.out.println("x is equal to 2");
-	                break;
-	            case 4:
-	                System.out.println("x is equal to 4");
-	                break;
-	            default:
-	                System.out.println("x is equal non of the above values");
-	        }
-	            
-	    }
-	        
+package example;
+
+public class Example {
+    public static void main(String[] args) {
+
+	int x = 4;
+
+	if (x == 20) {
+	    System.out.println("x is equal to 20");
 	}
+
+	if (x == 4) {
+	    System.out.println("x is equal to 4");
+	}
+
+	if (x == 10) {
+	    System.out.println("x is equal to 10");
+	} else {
+	    System.out.println("x is not equal to 10");
+	}
+
+	switch(x) {
+	    case 2:
+		System.out.println("x is equal to 2");
+		break;
+	    case 4:
+		System.out.println("x is equal to 4");
+		break;
+	    default:
+		System.out.println("x is equal non of the above values");
+	}
+
+    }
+
+}
 
 ```
 
@@ -340,25 +340,25 @@ Below is the program example with its corresponding output
 The while loop will execute the statements over and over again until the condition becomes false.  
 ```
 
-	while([condition]) {
-		statements;
-	}
+while([condition]) {
+	statements;
+}
 ```
 
 The do-while loop will execute the statements at least once, then after that as long as the condition is true.  
 ```
 
-	do {
-		statements
-	} while([condition])
+do {
+	statements
+} while([condition])
 ```
 
 The for loop will execute the initialization statement once, repeats the cycle of testing the condition to see if it is true, if true execute the statements, then execute the increment/decrement statement. The cycle will repeat until the condition become false. I marked the increment/decrement statement that way because usually an incremental/decremental statement is placed there. Otherwise, any Java legal statement can be put there.  
 ```
 
-	for ([initialization]; [condition]; [increment/decrement]) {
-		statements;
-	}
+for ([initialization]; [condition]; [increment/decrement]) {
+	statements;
+}
 
 ```
 
@@ -366,35 +366,35 @@ Below is an example
 
 ``` java
 
-	package example;
-	
-	public class Example {
-	    public static void main(String[] args) {
-	        
-	        int x = 0;
-	        
-	        while (x < 3) {
-	            System.out.println(x);
-	            x = x + 1;
-	        }
-	        
-	        System.out.println();
-	        x = 0;
-	
-	        do {
-	            System.out.println(x);
-	            x = x + 1;
-	        } while (x < 3);
-	
-	        System.out.println();
-	
-	        for(x = 0; x < 3; x = x + 1) {
-	            System.out.println(x);
-	        } 
-	            
-	    }
-	        
+package example;
+
+public class Example {
+    public static void main(String[] args) {
+
+	int x = 0;
+
+	while (x < 3) {
+	    System.out.println(x);
+	    x = x + 1;
 	}
+
+	System.out.println();
+	x = 0;
+
+	do {
+	    System.out.println(x);
+	    x = x + 1;
+	} while (x < 3);
+
+	System.out.println();
+
+	for(x = 0; x < 3; x = x + 1) {
+	    System.out.println(x);
+	} 
+
+    }
+
+}
 	
 ```
 
@@ -408,10 +408,10 @@ In Java, subroutines are called methods. Here is the syntax for creating a metho
 
 ```
 
-	[access-modifier] [non-access-modifier] [return-type] [identifier]([parameter-definitions]) {
-		statements;
-		return statement;
-	}
+[access-modifier] [non-access-modifier] [return-type] [identifier]([parameter-definitions]) {
+	statements;
+	return statement;
+}
 
 ```
 
@@ -425,34 +425,34 @@ Every method must have a return statement. When the return statement is encounte
 
 ``` java
 
-	package example;
-	
-	public class Example {
-	    
-	    public static int timesTwo(int x) {
-	        // this method takes an integer as an input and returns twice the integer as output
-	        x = x * 2;
-	        return x;
-	    }
-	    
-	    
-	    public static void printNumber(int x) {
-	        // this method  takes in an input as integer and prints it, then exits
-	        System.out.println(x);
-	        return;
-	    }
-	        
-	    public static void main(String[] args) {
-	        
-	        int x;
-	        /* this is how a method that returns a value is called
-	        we place the variable which is supposed to hold the returned value on the left of the assignmment operator*/
-	        x = timesTwo(78);
-	
-	        printNumber(x); // calling a function that does not return a value
-	    }
-	        
-	}
+package example;
+
+public class Example {
+
+    public static int timesTwo(int x) {
+	// this method takes an integer as an input and returns twice the integer as output
+	x = x * 2;
+	return x;
+    }
+
+
+    public static void printNumber(int x) {
+	// this method  takes in an input as integer and prints it, then exits
+	System.out.println(x);
+	return;
+    }
+
+    public static void main(String[] args) {
+
+	int x;
+	/* this is how a method that returns a value is called
+	we place the variable which is supposed to hold the returned value on the left of the assignmment operator*/
+	x = timesTwo(78);
+
+	printNumber(x); // calling a function that does not return a value
+    }
+
+}
 
 
 ```
@@ -464,18 +464,18 @@ Arrays allows us to store two or more values of one data type under one identifi
 
 ``` 
 
-	[data-type][] [identifier]; // declaring
-	[identifier] = new [data-type][number-of-elements]
+[data-type][] [identifier]; // declaring
+[identifier] = new [data-type][number-of-elements]
 ```
 
 For example:
 
 ``` java
 
-	int[] integers = new int[10]; // declaring and initialiazation
-	integers[0] = 1234; // assigning the first element a value of 1234
-	integers[9] = 67;   // assigning the last element a value of 67
-	integers[4] = 1000; // assigning the fifth element a value of 1000
+int[] integers = new int[10]; // declaring and initialiazation
+integers[0] = 1234; // assigning the first element a value of 1234
+integers[9] = 67;   // assigning the last element a value of 67
+integers[4] = 1000; // assigning the fifth element a value of 1000
 ```
 
 **NB.** The indexes are zero based, that's why the first element has an index 0 and the 10th element(last element) has an index of 9.
@@ -484,8 +484,8 @@ In Java, arrays are also treated as some kind of object. An array has a property
 
 ``` java  
 
-	int[10] integers;
-	System.out.println(integers.length);
+int[10] integers;
+System.out.println(integers.length);
 
 ```
 
@@ -496,17 +496,17 @@ We have discussed what classes and objects are in the Object-Oriented Programmin
 
 ``` 
 
-	package [package name];
+package [package name];
 
-	[import statements]
-	
-	public class [identifier] {
-		
-		[property declarations]
-		
-		[method declarations]
-	
-	}
+[import statements]
+
+public class [identifier] {
+
+	[property declarations]
+
+	[method declarations]
+
+}
 
 ```
 
@@ -514,8 +514,8 @@ Import statements are used when we want to use a class that is not part of the p
 
 ```
 
-	import [package-name].[class-name];  // importing one class from a package
-	import [package-name].*; 			 // importing all tha classes in the package
+import [package-name].[class-name];  // importing one class from a package
+import [package-name].*; 			 // importing all tha classes in the package
 
 ```    
 
@@ -523,20 +523,20 @@ Let's create a class example:
 
 ``` java
 
-	package example;
+package example;
 
-	public class ClassExample {
-		
-		private int x = 0;
-		
-		public int getX() {
-			return x;
-		}
-		
-		public void setX(int x) {
-			this.x = x;
-		}
+public class ClassExample {
+
+	private int x = 0;
+
+	public int getX() {
+		return x;
 	}
+
+	public void setX(int x) {
+		this.x = x;
+	}
+}
 
 ```
 
@@ -544,27 +544,27 @@ Lets create a class with a main() and play with the code above the code above.
 
 ``` java
 
-	package example;
+package example;
 
-	public class Example {
-	
-		public static void main(String[] args) {
-			
-			int x; // local variable
-			ClassExample example; reference variable declaration
-			
-			example = new ClassExample(); // object creation / instantiation
-			
-			System.out.print("The value before calling setX(): ");
-			x = example.getX();
-			System.out.println(x);
-			
-			example.setX(12);
-			x = example.getX();
-			System.out.print("The value of x after calling set X: ");
-			
-		} 
-	}
+public class Example {
+
+	public static void main(String[] args) {
+
+		int x; // local variable
+		ClassExample example; reference variable declaration
+
+		example = new ClassExample(); // object creation / instantiation
+
+		System.out.print("The value before calling setX(): ");
+		x = example.getX();
+		System.out.println(x);
+
+		example.setX(12);
+		x = example.getX();
+		System.out.print("The value of x after calling set X: ");
+
+	} 
+}
 
 ```
 
@@ -575,46 +575,46 @@ Let's rewrite the above code with a constructor:
 
 ``` java
 
-	package example;
-	
-	public class ClassExample {
-		
-		private int x = 0;
-		
-		public int getX() {
-			return x;
-		}
-		
-		public void setX(int x) {
-			this.x = x;
-		}
-		
-		public ClassExample(int x) {
-			this.x = x;
-		}
+package example;
+
+public class ClassExample {
+
+	private int x = 0;
+
+	public int getX() {
+		return x;
 	}
+
+	public void setX(int x) {
+		this.x = x;
+	}
+
+	public ClassExample(int x) {
+		this.x = x;
+	}
+}
 
 ```
    
 And then we rewrite the implementing code to use the constructor.   
 ``` java
 
-	package example;
-	
-	public class Example {
-		
-		public static void main(String[] args) {
-			
-			int x; // local variable
-			ClassExample example; reference variable declaration
-			
-			example = new ClassExample(1023); // object creation / instantiation
-			
-			System.out.print("The value of the property x set by the constructor: ");
-			x = example.getX();
-			System.out.println(x);
-			
-		} 
+package example;
+
+public class Example {
+
+	public static void main(String[] args) {
+
+		int x; // local variable
+		ClassExample example; reference variable declaration
+
+		example = new ClassExample(1023); // object creation / instantiation
+
+		System.out.print("The value of the property x set by the constructor: ");
+		x = example.getX();
+		System.out.println(x);
+
+	} 
 	}
 
 ```
@@ -641,39 +641,39 @@ Looking at all the information we have, we can see that we need to create two cl
 
 ``` java
 
-	package example;
-	
-	public class Drink {
-	    
-	    // properties are marked final because we do not wish them to be changed after instantiation
-	    // they are marked protected because we want the Wine class to be able to access them
-	    // otherwise we will have them marked private
-	    protected final String batch_no;  // yes it is a string
-	    protected final int liters; 
-	    protected final String beverage_name;
-	    protected final int price_per_liter;
-	
-	    public Drink(String beverage_name, String batch_no, int liters, int price_per_liter) { // constructor
-	        // setting properties using values passed to the constructor
-	        this.beverage_name = beverage_name;
-	        this.batch_no = batch_no;
-	        this.liters = liters;
-	        this.price_per_liter = price_per_liter;
-	    }
-	
-	    public int getTotalPrice() {
-	        // calculating the total price for the batch
-	        return liters * price_per_liter; 
-	    }
-	
-	    public void showInfo() {
-	        // printing out all the information about this batch
-	        int price = getTotalPrice();
-	        System.out.println("\nBeverage name:\t" + this.beverage_name);
-	        System.out.println("Batch number:\t" + this.batch_no);
-	        System.out.println("Batch price:\t$" + price);
-	    }
-	}
+package example;
+
+public class Drink {
+
+    // properties are marked final because we do not wish them to be changed after instantiation
+    // they are marked protected because we want the Wine class to be able to access them
+    // otherwise we will have them marked private
+    protected final String batch_no;  // yes it is a string
+    protected final int liters; 
+    protected final String beverage_name;
+    protected final int price_per_liter;
+
+    public Drink(String beverage_name, String batch_no, int liters, int price_per_liter) { // constructor
+	// setting properties using values passed to the constructor
+	this.beverage_name = beverage_name;
+	this.batch_no = batch_no;
+	this.liters = liters;
+	this.price_per_liter = price_per_liter;
+    }
+
+    public int getTotalPrice() {
+	// calculating the total price for the batch
+	return liters * price_per_liter; 
+    }
+
+    public void showInfo() {
+	// printing out all the information about this batch
+	int price = getTotalPrice();
+	System.out.println("\nBeverage name:\t" + this.beverage_name);
+	System.out.println("Batch number:\t" + this.batch_no);
+	System.out.println("Batch price:\t$" + price);
+    }
+}
 
 ```
 
@@ -682,31 +682,31 @@ As we can see, the first four properties are already there in the Drink class. W
 
 ``` java
 
-	package example;
+package example;
 
-	public class Wine extends Drink {
-	
-	    // properties marked final because we do not wish to change them after instantiation
-	    // marked private because we do not wish them to be accessed outside this class
-	    private final int maturity;
-	    private final int price_per_year;
-	
-	    public Wine(String beverage_name, String batch_no, int liters, int price_per_liter, int maturity, int price_per_year) { // constructor
-	        super(beverage_name, batch_no, liters, price_per_liter); // calling the constructor of the super class
-	        this.maturity = maturity;
-	        this.price_per_year = price_per_year;
-	    }
-	
-	    @Override
-	    public int getTotalPrice() {
-	        // calculating the total price of the batch, returning the result.
-	        int price, maturity_price, amount_price;
-	        amount_price = super.liters * super.price_per_liter;
-	        maturity_price = super.liters * this.maturity;
-	        price = maturity_price + amount_price;
-	        return price;
-	    }
-	}
+public class Wine extends Drink {
+
+    // properties marked final because we do not wish to change them after instantiation
+    // marked private because we do not wish them to be accessed outside this class
+    private final int maturity;
+    private final int price_per_year;
+
+    public Wine(String beverage_name, String batch_no, int liters, int price_per_liter, int maturity, int price_per_year) { // constructor
+	super(beverage_name, batch_no, liters, price_per_liter); // calling the constructor of the super class
+	this.maturity = maturity;
+	this.price_per_year = price_per_year;
+    }
+
+    @Override
+    public int getTotalPrice() {
+	// calculating the total price of the batch, returning the result.
+	int price, maturity_price, amount_price;
+	amount_price = super.liters * super.price_per_liter;
+	maturity_price = super.liters * this.maturity;
+	price = maturity_price + amount_price;
+	return price;
+    }
+}
 
 ```
 
@@ -716,78 +716,78 @@ Now let's create a class to implement the Wine and Drink classes:
 
 ``` java
 
-	package example;
+package example;
 
-	import java.util.Scanner;
-	
-	public class Beverages {
-	    public static void main(String[] args) {
-	
-	        int number_of_batches;
-	        Scanner scan = new Scanner(System.in);
-	        String clear;
-	
-	        System.out.print("Enter the number of batches: ");
-	        number_of_batches = scan.nextInt();
-	        clear = scan.nextLine();
-	
-	        Drink[] batches = new Drink[number_of_batches];
-	
-	        int liters, price_per_liter, maturity, price_per_year;
-	        String type, name, batch_no;
-	
-	        for (int i = 0; i < number_of_batches; i++) {
-	            System.out.print("\nEnter beverage type (drink/wine): ");
-	            type = scan.nextLine();
-	            System.out.print("Enter beverage name: ");
-	            name = scan.nextLine();
-	            System.out.print("Enter batch_no: ");
-	            batch_no = scan.nextLine();
-	            System.out.print("Enter amount of beverage in batch(liters): ");
-	            liters = scan.nextInt();
-	            clear = scan.nextLine();
-	            System.out.print("Enter price per liter: $");
-	            price_per_liter = scan.nextInt();
-	            clear = scan.nextLine();
-	
-	            switch (type) {
-	
-	                case "wine":
-	
-	                    System.out.print("Enter maturity(years): ");
-	                    maturity = scan.nextInt();
-	                    clear = scan.nextLine();
-	                    System.out.print("Enter price per year: $");
-	                    price_per_year = scan.nextInt();
-	                    clear = scan.nextLine();
-	
-	                    batches[i] = new Wine(name, batch_no, liters, price_per_liter, maturity, price_per_year);
-	
-	                    break;
-	
-	                case "drink":
-	                    batches[i] = new Drink(name, batch_no, liters, price_per_liter);
-	                    break;
-	
-	                default: 
-	                    System.err.println("You entered a wrong beverage type. I'm exiting");
-	                    System.exit(1);
-	            }
-	        }
-	
-	        int totalPrice = 0;
-	        int batch_price;
-	
-	        for (int i = 0; i < number_of_batches; i++) {
-	            batches[i].showInfo();
-	            batch_price = batches[i].getTotalPrice(); // polymorphism at work
-	            totalPrice = totalPrice + batch_price; // incrementing the total price by the price of the current batch 
-	        }
-	
-	        System.out.println("\nTotal price: $" + totalPrice);
-	
+import java.util.Scanner;
+
+public class Beverages {
+    public static void main(String[] args) {
+
+	int number_of_batches;
+	Scanner scan = new Scanner(System.in);
+	String clear;
+
+	System.out.print("Enter the number of batches: ");
+	number_of_batches = scan.nextInt();
+	clear = scan.nextLine();
+
+	Drink[] batches = new Drink[number_of_batches];
+
+	int liters, price_per_liter, maturity, price_per_year;
+	String type, name, batch_no;
+
+	for (int i = 0; i < number_of_batches; i++) {
+	    System.out.print("\nEnter beverage type (drink/wine): ");
+	    type = scan.nextLine();
+	    System.out.print("Enter beverage name: ");
+	    name = scan.nextLine();
+	    System.out.print("Enter batch_no: ");
+	    batch_no = scan.nextLine();
+	    System.out.print("Enter amount of beverage in batch(liters): ");
+	    liters = scan.nextInt();
+	    clear = scan.nextLine();
+	    System.out.print("Enter price per liter: $");
+	    price_per_liter = scan.nextInt();
+	    clear = scan.nextLine();
+
+	    switch (type) {
+
+		case "wine":
+
+		    System.out.print("Enter maturity(years): ");
+		    maturity = scan.nextInt();
+		    clear = scan.nextLine();
+		    System.out.print("Enter price per year: $");
+		    price_per_year = scan.nextInt();
+		    clear = scan.nextLine();
+
+		    batches[i] = new Wine(name, batch_no, liters, price_per_liter, maturity, price_per_year);
+
+		    break;
+
+		case "drink":
+		    batches[i] = new Drink(name, batch_no, liters, price_per_liter);
+		    break;
+
+		default: 
+		    System.err.println("You entered a wrong beverage type. I'm exiting");
+		    System.exit(1);
 	    }
 	}
+
+	int totalPrice = 0;
+	int batch_price;
+
+	for (int i = 0; i < number_of_batches; i++) {
+	    batches[i].showInfo();
+	    batch_price = batches[i].getTotalPrice(); // polymorphism at work
+	    totalPrice = totalPrice + batch_price; // incrementing the total price by the price of the current batch 
+	}
+
+	System.out.println("\nTotal price: $" + totalPrice);
+
+    }
+}
 
 ```
 
@@ -812,30 +812,30 @@ Let's do an example. We want to create a simple class that printout a name we wi
 
 ``` java 
 
-	package example;
-	
-	public class ThreadExample extends Thread {
-	    
-	    private final String name;
-	    
-	    public ThreadExample(String name) { // constructor
-	        this.name = name;  // setting name
-	    }
-	    
-	    @Override
-	    public void run() {
-	        int i;
-	        
-	        for (i = 0; i < 10; i++) {
-	            System.out.println(this.name + "  printing " + i);
-	            try {
-	                Thread.sleep(1000);
-	            } catch (Exception e) {
-	                System.exit(1);
-	            }
-	        }
+package example;
+
+public class ThreadExample extends Thread {
+
+    private final String name;
+
+    public ThreadExample(String name) { // constructor
+	this.name = name;  // setting name
+    }
+
+    @Override
+    public void run() {
+	int i;
+
+	for (i = 0; i < 10; i++) {
+	    System.out.println(this.name + "  printing " + i);
+	    try {
+		Thread.sleep(1000);
+	    } catch (Exception e) {
+		System.exit(1);
 	    }
 	}
+    }
+}
 
 ```
 
@@ -843,21 +843,21 @@ The following is the implementng class:
 
 ``` java 
 
-	package example;
-	
-	public class Example {
-	     
-	    public static void main(String[] args) {
-	        
-	       ThreadExample threadA = new ThreadExample("A"); // creating a thread with name B
-	       ThreadExample threadB = new ThreadExample("B"); // creating a thread with name B
-	       
-	       threadA.start(); // starting threadA
-	       threadB.start(); // starting threadB
-	       
-	    }
-	        
-	}
+package example;
+
+public class Example {
+
+    public static void main(String[] args) {
+
+       ThreadExample threadA = new ThreadExample("A"); // creating a thread with name B
+       ThreadExample threadB = new ThreadExample("B"); // creating a thread with name B
+
+       threadA.start(); // starting threadA
+       threadB.start(); // starting threadB
+
+    }
+
+}
 
 ```
 
