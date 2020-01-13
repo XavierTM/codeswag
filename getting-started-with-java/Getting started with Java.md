@@ -1,6 +1,6 @@
 ## Getting Started with Java
 ### What is Java?
-Java is a high level programming language, owned by Oracle. It is one of the most popular programming languages in the world, and it has been on the #1 most used programming language for some years. As of 2019, it was rated the third most used  programming language ([GitHub Octoverse](https://octoverse.github.com)).
+Java is a high-level programming language, owned by Oracle. It is one of the most popular programming languages in the world, and it has been on the #1 most used programming language for some years. As of 2019, it was rated the third most used  programming language ([GitHub Octoverse](https://octoverse.github.com)).
 
 #### So why is Java so popular?:  
  * **Platform-independence**: Java code written for Windows can be run on Linux and vice versa(or any other popular platform). In fact, you don't write Java code for Windows or Linux, you just write Java code. And it will run on any popular platform. Windows, Linux, Unix, MacOS, etc. You don't need to recompile it, you just need to run it. This portability is made possible by what is called the *Java Virtual Machine(JVM)*.  
@@ -18,7 +18,9 @@ What we will need:
 A compiler for Java is included in what is called a *Java Development Kit(JDK)*. The JDK consists of the Java compiler, the JVM as well as the Java core classes. 
 For the editor, we can choose from a variety of popular editors, but in this tutorial we will use NetBeans.
 
-The JDK is found on this [link](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Follow the instructions to download and install. Now we need to set up the path. This allows you to run Java using the command-line.
+The JDK is found on this [link](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Follow the instructions to download and install.
+![JDK official site download page](https://codeswag.co.uk/wp-content/uploads/2020/01/download-jdk-300x169.png)
+Now we need to set up the path. This allows you to run Java using the command-line.
 
 #### For Windows :
 * Open Control Panel
@@ -28,7 +30,7 @@ The JDK is found on this [link](http://www.oracle.com/technetwork/java/javase/do
 * Then click the "Environment Variable" button.
 * Now edit the Path variable under System variables, by appending the path to the java executables. The path will be "..\java\jdk\bin", the prefix(..) depending on the folder you chose to install java.
 
-Now to install NetBeans, follow this [link](https://netbeans.apache.org/download/index.html) to download and install it on your machine.
+Now to install NetBeans, follow this [link](https://netbeans.apache.org/download/index.html) to download and install it on your machine.![Netbeans download page](https://codeswag.co.uk/wp-content/uploads/2020/01/download-netbeans-ide-300x169.png)
 
 ### Object-Oriented Programming(OOP)
 Before we write our first Java program, let's first introduce OOP. As stated earlier, OOP is a programming paradigm in which data and the code that operates on the data are grouped into objects.
@@ -56,7 +58,7 @@ public class HelloWorld {
 }
 ```
 
-![Hello world output](https://codeswag.co.uk/wp-content/uploads/2020/01/Hello-world-300x66.png)
+<img height="90px" src="https://codeswag.co.uk/wp-content/uploads/2020/01/Hello-world-1-300x62.png" alt="Hello world output">
 
 One thing to note is that Java tries to make sure that we don't dare to do anything without creating a class. It was designed to make sure that it is simply a difficult task to avoid all the benefits we have been talking about above, even if we're okay with *not benefitting*. This is why(most probably) we have to create a class in the above code example, even though we are not going to create an object instance of it.
   
@@ -249,7 +251,7 @@ public class Example {
 }
 ```
 
-![sequential-construct-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Sequential-construct-300x107.png)
+![sequential-construct-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Sequential-construct-1-300x103.png)
 
 * **conditional**: This construct shows that a statement, or a group of statements, called a block, will be executed only if a certain condition is met. There are two types of conditional constructs in Java, the **if** construct and the **switch** construct.
 
@@ -333,7 +335,7 @@ public class Example {
 
 ```
 
-![Conditional-construct-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Conditional-constructs.png)
+![Conditional-construct-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Conditional-constructs-1-300x104.png)
 
 * **iterative**: this construct shows that a statement or a group of statements will be executed until a certain condition is true, or while a certain condition is true. In Java, iterative constructs are called loops, and there are three types of loops.
 
@@ -398,7 +400,7 @@ public class Example {
 	
 ```
 
-![Iterative-construct-demo-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Iterative-constructs-300x216.png)
+![Iterative-construct-demo-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Iterative-constructs-1-300x240.png)
 
 All the constructs can be used together, and it should be noted that the general flow of a program is sequential. That means, for example, if we write a conditional construct, then an iterative construct below, the conditional construct is executed first, then the iterative construct later. And also, we can use another construct in another construct.
 
@@ -457,7 +459,7 @@ public class Example {
 
 ```
 
-![Methods-demo](https://codeswag.co.uk/wp-content/uploads/2020/01/Methods-300x63.png)
+![Methods-demo](https://codeswag.co.uk/wp-content/uploads/2020/01/Methods-1-300x67.png)
 
 ### Arrays
 Arrays allows us to store two or more values of one data type under one identifier. Each element will then be distiquished by specifying its position(a number), also called an index. Below is the format for declaring and initializing an array:  
@@ -569,6 +571,8 @@ public class Example {
 
 ```
 
+![Class-without-constructor-demo](https://codeswag.co.uk/wp-content/uploads/2020/01/Class-example-without-constructor-300x83.png)
+
 #### Constructors 
 A constructor is a method that is called whenever an object of a class is being constructed. In the above example, we didn't write a constructor, so Java will create a default constructor for our class.
 To create a constructor, we create a method in a class body with the same name as the class but with no return type(not even *void*). The method can have arguments also.
@@ -619,6 +623,8 @@ public class Example {
 	}
 
 ```
+
+![Class-with-constrructor-demo](https://codeswag.co.uk/wp-content/uploads/2020/01/Class-example-with-constructor-300x47.png)
 
 #### Another example
 *Inheritance* is when a class gets the properties of another class. In Java, this achieved by the **extends** keyword.
@@ -792,7 +798,7 @@ public class Beverages {
 
 ```
 
-![Beverages-example-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Beverages-example-266x300.png)
+![Beverages-example-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Beverages-example-2-300x294.png)
 
 In our example we have demonstrated all the benefits of OOP:
 
@@ -840,7 +846,7 @@ public class ThreadExample extends Thread {
 
 ```
 
-The following is the implementng class:
+The following is the implementing class:
 
 ``` java 
 
@@ -861,5 +867,4 @@ public class Example {
 }
 
 ```
-
-!![Multithreading-demo-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Multithreading-example-271x300.png)
+![Multithreading-demo-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Multithreading-example-1-256x300.png)
