@@ -28,7 +28,7 @@ The JDK is found on this [link](http://www.oracle.com/technetwork/java/javase/do
 * Then click the "Environment Variable" button.
 * Now edit the Path variable under System variables, by appending the path to the java executables. The path will be "..\java\jdk\bin", the prefix(..) depending on the folder you chose to install java.
 
-Now to install NetBeans, follow this [link](http://www.netbeans.org/index.html) to download and install it on your machine.
+Now to install NetBeans, follow this [link](https://netbeans.apache.org/download/index.html) to download and install it on your machine.
 
 ### Object-Oriented Programming(OOP)
 Before we write our first Java program, let's first introduce OOP. As stated earlier, OOP is a programming paradigm in which data and the code that operates on the data are grouped into objects.
