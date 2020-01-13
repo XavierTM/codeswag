@@ -112,10 +112,10 @@ and this one also will be ignored
      *  **char**: this 16-bit data type is used to store a Unicode character code.  
      The reference value holds a pointer to a variable declared using a class type. We will explain this later using an example.
   
-  * *By scope*: There are three possible *scopes* of variables in Java:
-  		* *local variable*: a variable declared inside a function will be only accessible in that function.
-  		* *instance variable*: a variable declared inside a class(without the static non-access modifier). It will be accessible only in the class which it is defined.
-  		* *class variable*: a variable declared inside a class with a static non-access modifier.
+  * *By scope*: There are three possible *scopes* of variables in Java:  
+    * *local variable*: a variable declared inside a function will be only accessible in that function.  
+    * *instance variable*: a variable declared inside a class(without the static non-access modifier). It will be accessible only in the class which it is defined.
+    * *class variable*: a variable declared inside a class with a static non-access modifier.
 
 	The syntax  for declaring a property of a class(class or instance variable): 
  
