@@ -47,13 +47,13 @@ OOP has 4 pillars:
 ### Hello world
 ``` java
 
-	package example;
+package example;
 
-	public class HelloWorld {
-		public static void main(String[] args) {
-			System.out.println("Hello world);
-		}
+public class HelloWorld {
+	public static void main(String[] args) {
+		System.out.println("Hello world);
 	}
+}
 ```
 
 ![Hello world output](https://codeswag.co.uk/wp-content/uploads/2020/01/Hello-world-300x66.png)
@@ -80,12 +80,12 @@ In Java, we use // to tell the compiler to ignore the text that follows. If we w
 
 ```
 
-	[code statement]; // this text will be ignored by the compiler
-	/* 
-	this line of text will be ignored by the compiler
-	and this one also will be ignored
-	*/
-	[code statement]
+[code statement]; // this text will be ignored by the compiler
+/* 
+this line of text will be ignored by the compiler
+and this one also will be ignored
+*/
+[code statement];
 
 
 ```
@@ -229,9 +229,9 @@ A *programming construct* is a defined structure that shows the order in which s
  
 ```
 
-	statement 1;
-	statement 2;
-	statement 3;
+statement 1;
+statement 2;
+statement 3;
 ```  
 
 For example:
@@ -551,7 +551,7 @@ public class Example {
 	public static void main(String[] args) {
 
 		int x; // local variable
-		ClassExample example; reference variable declaration
+		ClassExample example; // reference variable declaration
 
 		example = new ClassExample(); // object creation / instantiation
 
@@ -562,6 +562,7 @@ public class Example {
 		example.setX(12);
 		x = example.getX();
 		System.out.print("The value of x after calling set X: ");
+		System.out.println(x);
 
 	} 
 }
@@ -606,7 +607,7 @@ public class Example {
 	public static void main(String[] args) {
 
 		int x; // local variable
-		ClassExample example; reference variable declaration
+		ClassExample example; // reference variable declaration
 
 		example = new ClassExample(1023); // object creation / instantiation
 
