@@ -18,8 +18,9 @@ What we will need:
 A compiler for Java is included in what is called a *Java Development Kit(JDK)*. The JDK consists of the Java compiler, the JVM as well as the Java core classes. 
 For the editor, we can choose from a variety of popular editors, but in this tutorial we will use NetBeans.
 
-The JDK is found on this [link](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Follow the instructions to download and install.
-![JDK official site download page](https://codeswag.co.uk/wp-content/uploads/2020/01/download-jdk-300x169.png)
+The JDK is found on this [link](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Follow the instructions to download and install.  
+![JDK official site download page](https://codeswag.co.uk/wp-content/uploads/2020/01/download-jdk-300x169.png)  
+
 Now we need to set up the path. This allows you to run Java using the command-line.
 
 #### For Windows :
@@ -30,7 +31,8 @@ Now we need to set up the path. This allows you to run Java using the command-li
 * Then click the "Environment Variable" button.
 * Now edit the Path variable under System variables, by appending the path to the java executables. The path will be "..\java\jdk\bin", the prefix(..) depending on the folder you chose to install java.
 
-Now to install NetBeans, follow this [link](https://netbeans.apache.org/download/index.html) to download and install it on your machine.![Netbeans download page](https://codeswag.co.uk/wp-content/uploads/2020/01/download-netbeans-ide-300x169.png)
+Now to install NetBeans, follow this [link](https://netbeans.apache.org/download/index.html) to download and install it on your machine.  
+![Netbeans download page](https://codeswag.co.uk/wp-content/uploads/2020/01/download-netbeans-ide-300x169.png)
 
 ### Object-Oriented Programming(OOP)
 Before we write our first Java program, let's first introduce OOP. As stated earlier, OOP is a programming paradigm in which data and the code that operates on the data are grouped into objects.
@@ -867,4 +869,5 @@ public class Example {
 }
 
 ```
-![Multithreading-demo-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Multithreading-example-1-256x300.png)
+
+<div><img alt="Multitheading-demo" src="https://codeswag.co.uk/wp-content/uploads/2020/01/Multithreading-example-1-256x300.png"></div>
