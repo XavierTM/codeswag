@@ -33,6 +33,7 @@ Now we need to set up the path. This allows you to run Java using the command-li
 * Now edit the Path variable under System variables, by appending the path to the java executables. The path will be "..\java\jdk\bin", the prefix(..) depending on the folder you chose to install java.
 
 Now to install NetBeans, follow this [link](https://netbeans.apache.org/download/index.html) to download and install it on your machine.    
+
 ![Netbeans download page](https://codeswag.co.uk/wp-content/uploads/2020/01/download-netbeans-ide.png)
 
 ### Object-Oriented Programming(OOP)
