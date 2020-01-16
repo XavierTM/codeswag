@@ -32,7 +32,7 @@ Now we need to set up the path. This allows you to run Java using the command-li
 * Now edit the Path variable under System variables, by appending the path to the java executables. The path will be "..\java\jdk\bin", the prefix(..) depending on the folder you chose to install java.
 
 Now to install NetBeans, follow this [link](https://netbeans.apache.org/download/index.html) to download and install it on your machine.  
-![Netbeans download page](https://codeswag.co.uk/wp-content/uploads/2020/01/download-netbeans-ide-300x169.png)
+![Netbeans download page](https://codeswag.co.uk/wp-content/uploads/2020/01/download-netbeans-ide.png)
 
 ### Object-Oriented Programming(OOP)
 Before we write our first Java program, let's first introduce OOP. As stated earlier, OOP is a programming paradigm in which data and the code that operates on the data are grouped into objects.
@@ -60,7 +60,7 @@ public class HelloWorld {
 }
 ```
 
-<img height="90px" src="https://codeswag.co.uk/wp-content/uploads/2020/01/Hello-world-1-300x62.png" alt="Hello world output">
+![Hello world output](https://codeswag.co.uk/wp-content/uploads/2020/01/Hello-world-1.png)
 
 One thing to note is that Java tries to make sure that we don't dare to do anything without creating a class. It was designed to make sure that it is simply a difficult task to avoid all the benefits we have been talking about above, even if we're okay with *not benefitting*. This is why(most probably) we have to create a class in the above code example, even though we are not going to create an object instance of it.
   
@@ -253,7 +253,7 @@ public class Example {
 }
 ```
 
-![sequential-construct-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Sequential-construct-1-300x103.png)
+![sequential-construct-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Sequential-construct-1.png)
 
 * **conditional**: This construct shows that a statement, or a group of statements, called a block, will be executed only if a certain condition is met. There are two types of conditional constructs in Java, the **if** construct and the **switch** construct.
 
@@ -402,7 +402,7 @@ public class Example {
 	
 ```
 
-![Iterative-construct-demo-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Iterative-constructs-1-300x240.png)
+![Iterative-construct-demo-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Iterative-constructs-1.png)
 
 All the constructs can be used together, and it should be noted that the general flow of a program is sequential. That means, for example, if we write a conditional construct, then an iterative construct below, the conditional construct is executed first, then the iterative construct later. And also, we can use another construct in another construct.
 
@@ -461,7 +461,7 @@ public class Example {
 
 ```
 
-![Methods-demo](https://codeswag.co.uk/wp-content/uploads/2020/01/Methods-1-300x67.png)
+![Methods-demo](https://codeswag.co.uk/wp-content/uploads/2020/01/Methods-1.png)
 
 ### Arrays
 Arrays allows us to store two or more values of one data type under one identifier. Each element will then be distiquished by specifying its position(a number), also called an index. Below is the format for declaring and initializing an array:  
@@ -573,7 +573,7 @@ public class Example {
 
 ```
 
-![Class-without-constructor-demo](https://codeswag.co.uk/wp-content/uploads/2020/01/Class-example-without-constructor-300x83.png)
+![Class-without-constructor-demo](https://codeswag.co.uk/wp-content/uploads/2020/01/Class-example-without-constructor.png)
 
 #### Constructors 
 A constructor is a method that is called whenever an object of a class is being constructed. In the above example, we didn't write a constructor, so Java will create a default constructor for our class.
@@ -626,7 +626,7 @@ public class Example {
 
 ```
 
-![Class-with-constrructor-demo](https://codeswag.co.uk/wp-content/uploads/2020/01/Class-example-with-constructor-300x47.png)
+![Class-with-constrructor-demo](https://codeswag.co.uk/wp-content/uploads/2020/01/Class-example-with-constructor.png)
 
 #### Another example
 *Inheritance* is when a class gets the properties of another class. In Java, this achieved by the **extends** keyword.
@@ -800,7 +800,7 @@ public class Beverages {
 
 ```
 
-![Beverages-example-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Beverages-example-2-300x294.png)
+![Beverages-example-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Beverages-example-2.png)
 
 In our example we have demonstrated all the benefits of OOP:
 
@@ -870,4 +870,4 @@ public class Example {
 
 ```
 
-<div><img alt="Multitheading-demo" src="https://codeswag.co.uk/wp-content/uploads/2020/01/Multithreading-example-1-256x300.png"></div>
+<div><img alt="Multitheading-demo" src="https://codeswag.co.uk/wp-content/uploads/2020/01/Multithreading-example-1.png"></div>
