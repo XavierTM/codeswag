@@ -19,7 +19,7 @@ A compiler for Java is included in what is called a *Java Development Kit(JDK)*.
 For the editor, we can choose from a variety of popular editors, but in this tutorial we will use NetBeans.
 
 The JDK is found on this [link](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Follow the instructions to download and install.  
-![JDK official site download page](https://codeswag.co.uk/wp-content/uploads/2020/01/download-jdk-300x169.png)  
+![JDK official site download page](https://codeswag.co.uk/wp-content/uploads/2020/01/download-jdk.png)  
 
 Now we need to set up the path. This allows you to run Java using the command-line.
 
@@ -337,7 +337,7 @@ public class Example {
 
 ```
 
-![Conditional-construct-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Conditional-constructs-1-300x104.png)
+![Conditional-construct-output](https://codeswag.co.uk/wp-content/uploads/2020/01/Conditional-constructs-1.png)
 
 * **iterative**: this construct shows that a statement or a group of statements will be executed until a certain condition is true, or while a certain condition is true. In Java, iterative constructs are called loops, and there are three types of loops.
 
