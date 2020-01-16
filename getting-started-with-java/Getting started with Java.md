@@ -19,6 +19,7 @@ A compiler for Java is included in what is called a *Java Development Kit(JDK)*.
 For the editor, we can choose from a variety of popular editors, but in this tutorial we will use NetBeans.
 
 The JDK is found on this [link](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Follow the instructions to download and install.  
+
 ![JDK official site download page](https://codeswag.co.uk/wp-content/uploads/2020/01/download-jdk.png)  
 
 Now we need to set up the path. This allows you to run Java using the command-line.
@@ -31,7 +32,7 @@ Now we need to set up the path. This allows you to run Java using the command-li
 * Then click the "Environment Variable" button.
 * Now edit the Path variable under System variables, by appending the path to the java executables. The path will be "..\java\jdk\bin", the prefix(..) depending on the folder you chose to install java.
 
-Now to install NetBeans, follow this [link](https://netbeans.apache.org/download/index.html) to download and install it on your machine.  
+Now to install NetBeans, follow this [link](https://netbeans.apache.org/download/index.html) to download and install it on your machine.    
 ![Netbeans download page](https://codeswag.co.uk/wp-content/uploads/2020/01/download-netbeans-ide.png)
 
 ### Object-Oriented Programming(OOP)
@@ -46,7 +47,7 @@ OOP has 4 pillars:
 * **Encapsulation**: it is the grouping of data and subroutines working on them into one unit. Encapsulation reduces the complexity of the programs by eliminating the need for passing many parameters to subroutines.  
 * **Abstraction**: Abstraction is the hiding of implementation details of the object, only exposing interfaces through public subroutines. This makes the changing of code a lot easier, as long as we leave the interface the class as it is, we can change how the class works without affecting the code that depends on it.  
 * **Inheritance**: This is when objects of one class obtain characteristics of another class. This allows for code reuse, therefore simplifying software development.  
-* **Polymorphism**: This the ability of the same subroutine to exhibit different behavior in different objects(of different classes). This comes handy, for example, when we have a list of objects and we want to traverse the list, doing a different operation, depending on the type of code. Instead of using an if statement or switch case statement, we can create a method with the same name in all of the classes, but internally doing different things. So if we invoke a method on any object in the least, the required operation will be done. [This youtube video](https://youtu.be/pTB0EiLXUC8) explains these pillars in more detail.
+* **Polymorphism**: This the ability of the same subroutine to exhibit different behavior in different objects(of different classes). This comes handy, for example, when we have a list of objects and we want to traverse the list, doing a different operation, depending on the type of code. Instead of using an if statement or switch case statement, we can create a method with the same name in all of the classes, but internally doing different things. So if we invoke a method on any object in the list, the required operation will be done. [This youtube video](https://youtu.be/pTB0EiLXUC8) explains these pillars in more detail.
 
 ### Hello world
 ``` java
