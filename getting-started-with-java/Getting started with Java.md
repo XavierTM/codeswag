@@ -76,7 +76,7 @@ The array args is a location that will contain arguments passed to our program i
 
 #### Few points to note
 * Java is a case-sensitive language, x is not the same X.
-* A java class name should be the same(with case sensitivity in mind) as the name of the file it resides, otherwise our code will refuse to compile. While still on this, it is not advisable to define two classes in one file. And if we do(for whatever reasons we will be doing that), only one class in the file should be public. This class name will be the name of the file. Java files containing class code must be saved with a ".java" file extension.
+* A Java class name should be the same(with case sensitivity in mind) as the name of the file it resides, otherwise our code will refuse to compile. While still on this, it is not advisable to define two classes in one file. And if we do(for whatever reasons we will be doing that), only one class in the file should be public. This class name will be the name of the file. Java files containing class code must be saved with a ".java" file extension.
 *  Every class that we intend to run must have a *main()* method in it. Otherwise it won't run.
 *  Only the code in the main method is called. We can place code anywhere, but for it to run, it has to be either called by the code in the main method, or be called by the code that is being called by the code in the main method, or be called by the...
 
@@ -116,7 +116,8 @@ and this one also will be ignored
      *  **double**: this 64-bit data type stores a floating number(a number with a decimal point) in the range of +/- 1.7976931570E+308.
      *  **boolean**: this data type stores one bit, representing either a TRUE or FALSE.
      *  **char**: this 16-bit data type is used to store a Unicode character code.  
-     The reference value holds a pointer to a variable declared using a class type. We will explain this later using an example.
+     
+     The reference variable holds a pointer to a variable declared using a class type. We will explain this later using an example.
   
   * *By scope*: There are three possible *scopes* of variables in Java:  
     * *local variable*: a variable declared inside a function will be only accessible in that function.  
@@ -178,7 +179,7 @@ The value on the right of the operator will be assigned to the variable on the l
 ``` java 
 
 x = 67; // after execution of this statement, variable x will hold the value of 67
-y = x // the value of y after this statement will be 67
+y = x; // the value of y after this statement will be 67
 ```  
 
  * **Arithmetic operators**: Arithmetic operators perform arithmetic on variables:
